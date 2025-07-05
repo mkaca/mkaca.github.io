@@ -20,10 +20,10 @@ body {
 
 main.grid-layout {
     display: grid;
-    grid-template-columns: 1.3fr auto 1.3fr;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
     gap: 2.5rem;
-    max-width: 1400px;
     width: 100%;
+    padding: 2rem 4rem;
 }
 
 /* Shared Section Base */
@@ -38,6 +38,12 @@ section {
     border-radius: 16px;
     padding: 2rem;
     text-align: left;
+    overflow: hidden;
+    /*
+    height: 100%;
+    max-height: 1000px; Adjusts with JS based on your preview height */
+    position: relative;
+    cursor: pointer;
 }
 
 .story h2 {
@@ -213,4 +219,9 @@ font-size: 0.95rem;
     color: #111;
     /* dark text */
     font-weight: 500;
+}
+
+.story-link {
+    text-decoration: none;
+    color: inherit;
 }
