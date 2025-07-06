@@ -358,3 +358,35 @@ main.main-columns {
     background-color: #666;
     border-color: #fff;
 }
+
+.edu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.edu-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.edu-item img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.edu-item p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.edu-item .subtext {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Left Column - Story Layout End */
