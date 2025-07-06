@@ -49,36 +49,6 @@ body {
     color: #fff;
 }
 
-/* Left Column - Story */
-.story {
-    background: linear-gradient(160deg, #2d2f33, #555860);
-    border: 2px solid #888;
-    border-radius: 16px;
-    padding: 2rem;
-    text-align: left;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-}
-
-.story h2 {
-    text-align: center;
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-}
-
-.story p {
-    white-space: pre-wrap;
-    font-size: 1rem;
-    color: #fff;
-    line-height: 1.75;
-}
-
-.story-link {
-    text-decoration: none;
-    color: inherit;
-}
-
 /* Right Column - Wix Preview */
 .preview {
     background-color: #222;
@@ -129,12 +99,16 @@ body {
 /* Projects preview image */
 .project-preview {
     width: 100%;
-    max-height: 300px;
-    object-fit: contain;
+    height: auto;
+    max-width: 800px;
+    min-width: 300px;
+    max-height: 450px;
+    min-height: 150px;
     border-radius: 8px;
-    margin-bottom: 2rem;
     border: 2px solid #666;
+    margin-bottom: 2rem;
     transition: transform 0.2s ease;
+    object-fit: contain;
 }
 
 .project-preview:hover {
@@ -296,4 +270,91 @@ main.main-columns {
     padding: 2rem 4rem;
     width: 100%;
     box-sizing: border-box;
+}
+
+
+/* Story Layout here */
+
+/* Left Column - Story */
+.story {
+    background: linear-gradient(160deg, #2d2f33, #555860);
+    border: 2px solid #888;
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.story h2 {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.story p {
+    white-space: pre-wrap;
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.75;
+}
+
+.story-link {
+    text-decoration: none;
+    color: inherit;
+}
+/* Left Column - Story Large Structure End */
+
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.story-box {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    color: #eee;
+}
+
+.story-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+    text-align: center;
+    color: #fff;
+}
+
+.story-box ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.story-box li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.story-button {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.story-button .btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #444;
+    text-decoration: none;
+    border: 1px solid #777;
+    transition: all 0.2s ease;
+}
+
+.story-button .btn:hover {
+    background-color: #666;
+    border-color: #fff;
 }
