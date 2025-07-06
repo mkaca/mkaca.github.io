@@ -344,7 +344,7 @@ main.main-columns {
 }
 
 .story-box .subtext {
-    color: #333;
+    color: #000;
     font-size: 0.92rem;
 }
 
@@ -396,7 +396,7 @@ main.main-columns {
 
 .edu-item .subtext {
     font-size: 0.9rem;
-    color: #050505;
+    color: #000;
 }
 
 /* Left Column - Story Layout End */
