@@ -130,7 +130,7 @@
         </div>
         <div class="company">
           <img src="assets/PointClickCare.jpeg" alt="PointClickCare" />
-          <span>PointClickCare – QA SoftwareEngineer</span>
+          <span>PointClickCare – QA Software Engineer</span>
         </div>
       </div>
     </section>

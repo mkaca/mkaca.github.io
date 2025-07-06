@@ -114,7 +114,7 @@
                 </div>
                 <div class="company" data-tooltip="Yes we can">
                     <img src="assets/PointClickCare.jpeg" alt="PointClickCare" />
-                    <span>PointClickCare – QA SoftwareEngineer</span>
+                    <span>PointClickCare – QA Software Engineer</span>
                 </div>
             </div>
         </section>
