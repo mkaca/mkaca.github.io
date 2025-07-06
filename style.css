@@ -63,6 +63,32 @@ body {
     margin-bottom: 1rem;
 }
 
+.project-preview-wrapper {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.hover-text {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.project-preview-wrapper:hover .hover-text {
+    opacity: 1;
+}
+
 .portfolio-button {
     display: inline-block;
     padding: 0.5rem 1rem;
@@ -151,9 +177,10 @@ body {
 }
 
 .company img {
-    width: 65px;
-    height: 65px;
+    width: 85px;
+    height: 85px;
     object-fit: contain;
+    flex-shrink: 0; /* Prevent image from shrinking */
 }
 
 .company span {
