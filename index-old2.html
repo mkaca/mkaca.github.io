@@ -9,6 +9,30 @@
 </head>
 
 <body>
+
+    <!-- Sticky Header
+    <header class="sticky-header">
+        <div class="top-content">
+            <div class="profile-pic">
+                <img src="assets/profile.jpg" alt="Michael Kaca" />
+            </div>
+            <div class="profile-text">
+                <h1>Michael Kaca</h1>
+                <p class="title">Technologist | Builder | Innovator</p>
+                <p class="description">
+                    Driving impact through intelligent systems and elegant code.<br />
+                    Passionate about tech that solves real-world problems.
+                </p>
+                <div class="links">
+                        <a href="https://linkedin.com/in/michalkaca">LinkedIn</a>
+                        <a href="https://www.youtube.com/watch?v=6D53rlHS2WY" target="_blank">Discovery Engines Featured Podcast</a>
+                        <a href="https://github.com/mkaca">GitHub</a>
+                        <a href="resume.pdf">Resume</a>
+                </div>
+            </div>
+        </div>
+    </header> -->
+
     <!-- Sticky top section -->
     <header class="top-header">
         <div class="top-content">
@@ -29,18 +53,22 @@
         </div>
     </header>
 
-    <!-- Main 2-column content -->
-    <main class="main-columns">
-        <!-- Story box -->
-        <section class="story-box" onclick="window.location='story.html'">
-            <h2>My Story</h2>
-            <p>I was born in Toronto, Canada. At the young age of 10 months...<br>
-                <em>(Truncated for homepage. Click for full version.)</em>
-            </p>
-        </section>
+    <!-- Two Column Layout -->
+    <main class="two-column-layout">
 
-        <!-- Project/Company preview box -->
-        <section class="preview-box">
+        <!-- Left: Story -->
+        <a href="story.html" class="story-link">
+            <section class="story">
+                <h2>My Story</h2>
+                <p>
+                    I was born in Toronto, Canada. At the young age of 10 months...
+                    (Truncated for homepage. Click for full version.)
+                </p>
+            </section>
+        </a>
+
+        <!-- Right: Project Preview + Companies -->
+        <section class="preview">
             <h2>Personal Projects Portfolio</h2>
             <a class="portfolio-button" href="https://dabestineuro.wixsite.com/michael-kaca" target="_blank">
                 View Full Portfolio ↗
