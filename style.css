@@ -318,7 +318,7 @@ main.main-columns {
     border: 2px solid #090909;
     border-radius: 8px;
     padding: 1rem 1.5rem;
-    color: #eee;
+    color: #000000;
 }
 
 .story-box h3 {
@@ -336,6 +336,16 @@ main.main-columns {
 .story-box li {
     margin-bottom: 0.5rem;
     font-size: 0.95rem;
+}
+
+.story-box strong {
+    font-weight: 600;
+    color: #000;
+}
+
+.story-box .subtext {
+    color: #333;
+    font-size: 0.92rem;
 }
 
 .story-button {
