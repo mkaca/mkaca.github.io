@@ -314,8 +314,8 @@ main.main-columns {
 }
 
 .story-box {
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 2px solid #ccc;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #090909;
     border-radius: 8px;
     padding: 1rem 1.5rem;
     color: #eee;
@@ -325,7 +325,7 @@ main.main-columns {
     font-size: 1.2rem;
     margin-bottom: 0.6rem;
     text-align: center;
-    color: #fff;
+    color: #000000;
 }
 
 .story-box ul {
@@ -373,8 +373,8 @@ main.main-columns {
 }
 
 .edu-item img {
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
     flex-shrink: 0;
 }
@@ -386,7 +386,7 @@ main.main-columns {
 
 .edu-item .subtext {
     font-size: 0.9rem;
-    color: #ccc;
+    color: #050505;
 }
 
 /* Left Column - Story Layout End */
