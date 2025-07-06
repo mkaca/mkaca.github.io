@@ -44,7 +44,7 @@ body {
 }
 
 .links a:hover {
-    background-color: #333;
+    background-color: #797979;
     border-color: #fff;
     color: #fff;
 }
@@ -230,8 +230,8 @@ body {
 
 /* Profile Picture */
 .profile-pic img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #aaa;
@@ -284,7 +284,7 @@ body {
 }
 
 .profile-text .btn:hover {
-    background-color: #666;
+    background-color: #868686;
     border-color: #fff;
 }
 
