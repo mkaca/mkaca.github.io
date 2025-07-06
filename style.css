@@ -177,17 +177,18 @@ body {
     background-color: #fff;
     color: #000;
     padding: 1rem;
+    border: 2px solid #ddd;
     border-radius: 10px;
     margin-bottom: 1rem;
     position: relative;
-    transition: background-color 0.3s ease;
+    transition: border-width 0.3s ease;
     cursor: pointer;
     height: 120px;
     width: auto;
 }
 
 .company:hover {
-    background-color: #f0f0f0;
+    border-width: 4px;
 }
 
 .company img {
@@ -207,10 +208,10 @@ body {
 .company::after {
     content: attr(data-tooltip);
     position: absolute;
-    bottom: 110%;
+    bottom: 105%;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 0.4rem 0.75rem;
     border-radius: 6px;
