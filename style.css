@@ -458,6 +458,36 @@ main.main-columns {
 
 /* Left Column - Story Layout End */
 
+/* Scroll Indicator */
+.scroll-indicator {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ccc;
+    animation: bounce 2s infinite;
+    margin-bottom: 1rem;
+}
+/* remove maybe */
+.scroll-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
+}
+/* Scroll Indicator End */
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .companies-grid {
