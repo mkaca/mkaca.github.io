@@ -159,7 +159,7 @@ body {
 .companies-section {
     width: 100%;
     max-width: 1400px;
-    margin: 3rem auto;
+    margin: 1.5rem auto;
     padding: 2rem 4rem;
     box-sizing: border-box;
 }
@@ -512,6 +512,21 @@ main.main-columns {
 /* Scroll Indicator End */
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+    .story-box h3 {
+        font-size: 1.1rem;
+    }
+
+    .story-box li {
+        font-size: 0.9rem;
+    }
+
+    .edu-item img {
+        width: 75px;
+        height: 75px;
+    }
+}
+
 @media (max-width: 1024px) {
     .companies-grid {
         grid-template-columns: 1fr 1fr;
@@ -523,9 +538,47 @@ main.main-columns {
         gap: 1rem;
     }
 
+    .story-box h3 {
+        font-size: 1rem;
+    }
+
+    .story-box li {
+        font-size: 0.85rem;
+    }
+
     .edu-item img {
         width: 60px;
         height: 60px;
+    }
+
+    .story-box {
+        padding: 0.8rem 1.2rem;
+    }
+
+    .story {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .story-box h3 {
+        font-size: 0.95rem;
+    }
+
+    .story-box li {
+        font-size: 0.8rem;
+    }
+
+    .edu-item div strong {
+        font-size: 0.9rem;
+    }
+
+    .edu-item .subtext {
+        font-size: 0.8rem;
+    }
+
+    .story-box {
+        padding: 0.7rem 1rem;
     }
 }
 
@@ -554,7 +607,15 @@ main.main-columns {
     }
 
     .story-box {
-        padding: 1rem;
+        padding: 0.8rem 1rem;
+    }
+
+    .story-box h3 {
+        font-size: 0.9rem;
+    }
+
+    .story-box li {
+        font-size: 0.75rem;
     }
 
     .edu-item {
@@ -571,6 +632,14 @@ main.main-columns {
 
     .edu-item div {
         text-align: center;
+    }
+
+    .edu-item div strong {
+        font-size: 0.85rem;
+    }
+
+    .edu-item .subtext {
+        font-size: 0.75rem;
     }
 }
 
@@ -610,10 +679,22 @@ main.main-columns {
     }
 
     .story-box h3 {
-        font-size: 1rem;
+        font-size: 0.85rem;
     }
 
     .story-box li {
-        font-size: 0.85rem;
+        font-size: 0.7rem;
+    }
+
+    .story-box {
+        padding: 0.6rem 0.8rem;
+    }
+
+    .edu-item div strong {
+        font-size: 0.8rem;
+    }
+
+    .edu-item .subtext {
+        font-size: 0.7rem;
     }
 }
