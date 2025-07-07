@@ -134,10 +134,10 @@ body {
 .project-preview {
     width: 100%;
     height: auto;
-    max-width: 800px;
-    min-width: 300px;
-    max-height: 450px;
-    min-height: 150px;
+    max-width: 1200px;
+    min-width: 150px;
+    max-height: 800px;
+    min-height: 100px;
     border-radius: 8px;
     border: 2px solid #666;
     margin-bottom: 2rem;
@@ -405,7 +405,7 @@ main.main-columns {
     font-size: 0.92rem;
 }
 
-.story-button {
+.project-button {
     text-align: center;
     margin-top: 2rem;
 }
@@ -460,34 +460,28 @@ main.main-columns {
 
 /* Scroll Indicator */
 .scroll-indicator {
-    position: absolute;
-    bottom: 20px;
+    position: fixed;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 100;
-    font-size: 2rem;
-    /* Increase size */
+    font-size: 1.5rem;
     font-weight: bold;
     color: #fff;
-    /* Or something that contrasts more like #f0f0f0 */
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
     animation: bounce 2s infinite;
     pointer-events: none;
     white-space: nowrap;
     text-align: center;
-    margin-bottom: 1rem;
     transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 @keyframes bounce {
-
-    0%,
-    100% {
-        transform: translateY(0);
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
     }
-
     50% {
-        transform: translateY(8px);
+        transform: translateX(-50%) translateY(-8px);
     }
 }
 /* Scroll Indicator End */
