@@ -60,37 +60,6 @@
             word-break: normal;
             text-indent: 2rem;
         }
-
-        .story-image-right {
-            float: right;
-            max-width: 350px;
-            width: 30%;
-            height: auto;
-            margin: 0 0 1.5rem 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        }
-
-        .story-image-left {
-            float: left;
-            max-width: 300px;
-            width: 25%;
-            height: auto;
-            margin: 0 1.5rem 1.5rem 0;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        }
-
-        @media (max-width: 768px) {
-            .story-image-right,
-            .story-image-left {
-                float: none;
-                display: block;
-                margin: 1rem auto;
-                max-width: 100%;
-                width: 80%;
-            }
-        }
     </style>
 </head>
 
@@ -98,7 +67,6 @@
     <div class="story-container">
         <h1>My Story</h1>
         <p>
-            <img src="assets/story-nature-full.JPG" alt="Michael in nature" class="story-image-right">
             I was born in Toronto, Canada. At the young age of 10 months, my family moved back to Poland, where I spent the next 7 years of my life growing up in a small village 2 hours away from Krakow.
             At the age of 8, my family moved back to Canada, to the Greater Toronto Area, where I spent two years (grades 2 and 3) in the ESL (English as a Second Language) program.
             At the age of 10, my family moved to the city of Mississauga, where I attended St. Gerard. This school was not very good. In
@@ -147,7 +115,6 @@
 
         <p>
             After graduating, I moved to San Jose, California, where I worked at Apple as a Robotics Engineer, quickly becoming the Engineering Lead for the team.
-            <img src="assets/story-portrait-full.jpg" alt="Michael portrait" class="story-image-left">
             I was responsible for the development of the hardware and software for the Sensors SQA team, which included building robotic and computer vision systems
             to test various components, systems, features, and products. The focus was mostly on the biometric sensors such as FaceID and TouchID.
             As amazing as Apple was, I wanted a bigger challenge, so I enrolled in Georgia Tech's Master of Computer Science (OMSCS) program, specializing in
