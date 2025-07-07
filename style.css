@@ -476,6 +476,7 @@ main.main-columns {
     white-space: nowrap;
     text-align: center;
     margin-bottom: 1rem;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 @keyframes bounce {

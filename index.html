@@ -190,8 +190,28 @@ Mechanical and electrical design of various sub-modules">
             }
         }
 
+                // Hide scroll indicator when scrolling to bottom
+        function handleScrollIndicator() {
+            const scrollIndicator = document.querySelector('.scroll-indicator');
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight;
+            const clientHeight = document.documentElement.clientHeight;
+
+            // Calculate if we're near the bottom (within 100px)
+            const isNearBottom = scrollTop + clientHeight >= scrollHeight - 100;
+
+            if (isNearBottom) {
+                scrollIndicator.style.opacity = '0';
+                scrollIndicator.style.visibility = 'hidden';
+            } else {
+                scrollIndicator.style.opacity = '1';
+                scrollIndicator.style.visibility = 'visible';
+            }
+        }
+
         window.addEventListener('load', syncStoryHeight);
         window.addEventListener('resize', syncStoryHeight);
+        window.addEventListener('scroll', handleScrollIndicator);
     </script>
 
 </body>
