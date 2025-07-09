@@ -250,15 +250,26 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: rgba(20, 20, 20, 0.5);
-    border-bottom: 1px solid #666;
-    backdrop-filter: blur(6px);
     padding: 1.5rem 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+}
+
+.sticky-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(20, 20, 20, 0.5);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid #666;
+    z-index: -1;
 }
 
 /* Profile Picture */
